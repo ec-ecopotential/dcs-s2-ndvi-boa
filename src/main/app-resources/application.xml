@@ -8,7 +8,7 @@
       </defaultJobconf>
     </jobTemplate>
   </jobTemplates>
-  <workflow id="ndvi_boa" title="NDVI BOA - updated 2" abstract="Sentinel-2 NDVI BOA">
+  <workflow id="ndvi_boa" title="NDVI BOA - updated 3" abstract="Sentinel-2 NDVI BOA">
     <workflowVersion>1.0</workflowVersion>
     <node id="notebook">
       <job id="notebook"/>
