@@ -62,17 +62,19 @@ def parametrize(identifier, reference):
                 
                 ciop.log('DEBUG', 'cell %s' % (index))
                 
+                if len(names) == 1:
+                    
+                    if names[0] == 'data_path':
+                        cell['source'] = 'data_path = %s' % tmp_dir  
+        
+                    if names[0] == 'input_identifier':
+                        cell['source'] = 'input_identifier = %s' % identifier  
+                
+                    if names[0] == 'input_reference':
+                        cell['source'] = 'input_reference = %s' % reference  
+                
                 if len(names) != 2:
                     continue
-     
-                if names[0] == 'data_path' and action == 'runtime':
-                    cell['source'] = 'data_path = %s' % tmp_dir  
-        
-                if names[0] == 'input_identifier' and action == 'runtime':
-                    cell['source'] = 'input_identifier = %s' % identifier  
-                
-                if names[0] == 'input_reference' and action == 'runtime':
-                    cell['source'] = 'input_reference = %s' % reference  
                 
                 if names[0] == 'dict' or names[1] == 'dict':
                     
@@ -124,7 +126,9 @@ import cioppy
 ciop = cioppy.Cioppy()"""))
     
     code.append(nbf.v4.new_code_cell('tmp_dir = "' + tmp_dir + '"'))
-    code.append(nbf.v4.new_code_cell('os.makedirs(tmp_dir)'))
+    code.append(nbf.v4.new_code_cell("""\
+if not os.path.isdir(tmp_dir):
+    os.makedirs(tmp_dir)"""))
     
     #for reference in references:
     code.append(nbf.v4.new_code_cell('reference = "' + reference + '"'))

@@ -2,26 +2,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.terradue</groupId>
-  <artifactId>fully_automated</artifactId>
+  <artifactId>dcs-s2-ndvi-boa</artifactId>
   <packaging>pom</packaging>
-  <name>fully_automated</name>
+  <name>dcs-s2-ndvi-boa</name>
   <parent>
     <groupId>com.terradue</groupId>
     <artifactId>dcs-python-parent</artifactId>
     <version>2.0.0</version>
   </parent>
-  <description>a description</description>
+  <description>Bottom of Atmosphere NDVI derived from Sentinel-2</description>
   <version>1.0-SNAPSHOT</version>
   <properties>
-    <summary>a summary</summary>
-    <description>a description</description>
-    <community>a community</community>
-    <yumRepo>a community</yumRepo>
+    <summary>Bottom of Atmosphere NDVI derived from Sentinel-2</summary>
+    <description>Bottom of Atmosphere NDVI derived from Sentinel-2</description>
+    <community>ec-ecopotential</community>
+    <yumRepo>ec-ecopotential</yumRepo>
   </properties>
   <scm>
-    <connection>scm:git:ssh://git@github.com/a community/fully_automated</connection>
-    <developerConnection>scm:git:ssh://git@github.com/a community/fully_automated</developerConnection>
-    <url>https://github.com/a community/fully_automated</url>
+    <connection>scm:git:ssh://git@github.com/ec-ecopotential/dcs-s2-ndvi-boa</connection>
+    <developerConnection>scm:git:ssh://git@github.com/ec-ecopotential/dcs-s2-ndvi-boa</developerConnection>
+    <url>https://github.com/ec-ecopotential/dcs-s2-ndvi-boa</url>
     <tag>HEAD</tag>
   </scm>
   <profiles>
@@ -47,10 +47,13 @@
                 <configuration>
                   <!-- Set here the dependencies installed with 'sudo yum install'-->
                   <requires>
-                    <require>fftw</require>
                     <require>miniconda</require>
-                    <require>OTB</require>
+                    <require>java-1.8.0-openjdk-devel</require>
+                    <require>snap</require>
                   </requires>
+                    <postinstallScriptlet combine.self="override">
+                       <script>conda update conda -y &amp;&amp; conda install -y --file /application/dependencies/python/packages.list</script>
+                  </postinstallScriptlet>
                 </configuration>
               </execution>
             </executions>
