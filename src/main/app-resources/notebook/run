@@ -41,17 +41,6 @@ def parametrize(identifier, reference):
 
     global nb
         
-    #ts = ciop.getparam('ts')
-    #nc = ciop.getparam('nc')
-    #maxit = ciop.getparam('maxit')
-    
-    #nb.cells[1]['source'] = 'ts = %s' % (ts)  
-    ##nb.cells[3]['source'] = 'nc = %s' % (nc)
-    #nb.cells[5]['source'] = 'maxit = %s' % (maxit) 
-    #nb.cells[7]['source'] = 'data_path = "%s"' % ( tmp_dir )
-    #nb.cells[8]['source'] = 's2_identifier = "%s"' % ( identifier )
-    #nb.cells[9]['source'] = 's2_reference = "%s"' % ( reference )   
- 
     for index, cell in enumerate(nb['cells']):
        
         if str(cell['cell_type']) == 'code': 
@@ -65,13 +54,13 @@ def parametrize(identifier, reference):
                 if len(names) == 1:
                     
                     if names[0] == 'data_path':
-                        cell['source'] = 'data_path = %s' % tmp_dir  
+                        cell['source'] = 'data_path = ''%s''' % tmp_dir  
         
                     if names[0] == 'input_identifier':
-                        cell['source'] = 'input_identifier = %s' % identifier  
+                        cell['source'] = 'input_identifier = ''%s''' % identifier  
                 
                     if names[0] == 'input_reference':
-                        cell['source'] = 'input_reference = %s' % reference  
+                        cell['source'] = 'input_reference = ''%s''' % reference  
                 
                 if len(names) != 2:
                     continue

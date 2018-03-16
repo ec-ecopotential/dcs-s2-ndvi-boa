@@ -36,7 +36,7 @@ def main(argv):
                         el_source = root.xpath('/application/workflow/node[@id="notebook"]/sources/source',
                                             namespaces={}) 
         
-                        el_source[0].text = re.findall('"([^\']*)"', str(nb['cells'][7]['source']))[0]
+                        el_source[0].text = re.findall('"([^\']*)"', str(cell['source']))[0]
             
                 if len(names) != 2:
                     continue 
