@@ -8,3 +8,6 @@ runc
 *.lut
 *.tif
 *.png
+*.properties
+*.properties
+*BOA.xml
