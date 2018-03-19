@@ -1,6 +1,7 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: linux-64
+_r-mutex=1.0.0=anacondar_1
 alabaster=0.7.10=py27he5a193a_0
 anaconda=custom=py27h4a00acb_0
 asn1crypto=0.22.0=py27_0
@@ -36,7 +37,6 @@ dbus=1.10.10=0
 decorator=4.0.11=py27_0
 descartes=1.1.0=py27_0
 docutils=0.14=py27hae222c1_0
-ellip_triggers=0.0.1=py27_0
 entrypoints=0.2.2=py27_0
 enum34=1.1.6=py27_0
 expat=2.1.0=0
@@ -267,6 +267,7 @@ r-tibble=1.2=r3.3.2_0
 r-tidyr=0.6.0=r3.3.2_0
 r-tidyverse=1.0.0=r3.3.2_0
 r-ttr=0.23_1=r3.3.2_0
+r-udunits2=0.13=r3.3.2_0
 r-uuid=0.1_2=r3.3.2_0
 r-whisker=0.3_2=r3.3.2_2
 r-withr=1.0.2=r3.3.2_0
@@ -305,6 +306,7 @@ tk=8.5.18=0
 tornado=4.4.2=py27_0
 traitlets=4.3.1=py27_0
 typing=3.6.2=py27h66f49e2_0
+udunits2=2.2.25=hd30922c_1
 wcwidth=0.1.7=py27_0
 webencodings=0.5=py27_0
 wheel=0.29.0=py27_0

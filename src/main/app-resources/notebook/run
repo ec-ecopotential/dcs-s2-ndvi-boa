@@ -54,13 +54,13 @@ def parametrize(identifier, reference):
                 if len(names) == 1:
                     
                     if names[0] == 'data_path':
-                        cell['source'] = 'data_path = ''%s''' % tmp_dir  
+                        cell['source'] = 'data_path = \'%s\'' % tmp_dir  
         
                     if names[0] == 'input_identifier':
-                        cell['source'] = 'input_identifier = ''%s''' % identifier  
+                        cell['source'] = 'input_identifier = \'%s\'' % identifier  
                 
                     if names[0] == 'input_reference':
-                        cell['source'] = 'input_reference = ''%s''' % reference  
+                        cell['source'] = 'input_reference = \'%s\'' % reference  
                 
                 if len(names) != 2:
                     continue
