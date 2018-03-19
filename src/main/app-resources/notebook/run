@@ -49,25 +49,24 @@ def parametrize(identifier, reference):
                 root_ast = ast.parse(str(cell['source']))
                 names = list({node.id for node in ast.walk(root_ast) if isinstance(node, ast.Name)})
                 
-                ciop.log('DEBUG', 'cell %s' % (index))
-                
                 if len(names) == 1:
                     
                     if names[0] == 'data_path':
+                        ciop.log('INFO', 'cell %s updated with \'data_path\' value %s' % (index, tmp_dir))
                         cell['source'] = 'data_path = \'%s\'' % tmp_dir  
         
                     if names[0] == 'input_identifier':
+                        ciop.log('INFO', 'cell %s updated with \'input_identifier\' value %s' % (index, identifier))
                         cell['source'] = 'input_identifier = \'%s\'' % identifier  
                 
                     if names[0] == 'input_reference':
+                        ciop.log('INFO', 'cell %s updated with \'input_reference\' value %s' % (index, reference))
                         cell['source'] = 'input_reference = \'%s\'' % reference  
                 
                 if len(names) != 2:
                     continue
                 
                 if names[0] == 'dict' or names[1] == 'dict':
-                    
-                    ciop.log('DEBUG', 'cell %s %s %s' % (index, names[0], names[1]))
                     
                     # deal with the alphabetical order
                     if names[1] == 'dict': 
@@ -91,6 +90,8 @@ def parametrize(identifier, reference):
                         new_source = new_source + '])'
     
                         cell['source'] = '%s = %s' % (names[1], new_source)
+         
+                        ciop.log('INFO', 'cell %s %s updated' % (index, names[1]))
                     
             except SyntaxError:
                 
