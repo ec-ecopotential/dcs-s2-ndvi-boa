@@ -1,0 +1,20 @@
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="application">
+  <jobTemplates>
+    <jobTemplate id="notebook">
+      <streamingExecutable>/application/notebook/run</streamingExecutable>
+      <defaultParameters><parameter id="pa_code" title="Protected Area code" abstract="Protected Area code (one of DO,...)" maxOccurs="1" scope="runtime" type="LiteralData">DO</parameter><parameter id="pa_name" title="Protected Area name" abstract="Protected Area name (one of Donana,...)" maxOccurs="1" scope="runtime" type="LiteralData">Donana</parameter><parameter id="resolution" title="Spatial resolution" abstract="Spatial resolution in meters (10 or 20 or 60)" maxOccurs="1" scope="runtime" type="LiteralData">60</parameter><parameter id="plot" title="Boolean to add quicklooks to notebook" abstract="Boolean to add quicklooks to notebook" maxOccurs="1" scope="runtime" type="LiteralData">False</parameter><parameter id="flag_expr" title="Flag expression for pixel exclusion" abstract="Flag expression for pixel exclusion (e.g. saturated_l1a_B4 will exclude pixels having the flag saturated_l1a_B4 set)" maxOccurs="1" scope="runtime" type="LiteralData">saturated_l1a_B4</parameter></defaultParameters>
+     <defaultJobconf>
+        <property id="mapred.task.timeout">9900000000000</property>
+      </defaultJobconf>
+    </jobTemplate>
+  </jobTemplates>
+  <workflow id="ndvi_boa" title="NDVI BOA - updated 3" abstract="Sentinel-2 NDVI BOA">
+    <workflowVersion>1.0</workflowVersion>
+    <node id="notebook">
+      <job id="notebook"/>
+      <sources>
+        <source id="source" title="Input references" abstract="Input references" refid="string:list" scope="runtime">https://catalog.terradue.com/sentinel2/search?uid=S2A_MSIL2A_20170909T110651_N0205_R137_T29SPB_20170909T111217</source>
+      </sources>
+    </node>
+  </workflow>
+</application>
