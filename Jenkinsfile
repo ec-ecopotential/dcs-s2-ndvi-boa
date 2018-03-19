@@ -17,7 +17,7 @@ pipeline {
   agent {
     node {
       // docker community builder
-      label 'ci-community-docker-internal'
+      label 'ci-community-docker'
     }
   }
 
