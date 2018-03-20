@@ -39,7 +39,22 @@ class ISOMetadata:
                          'A:CI_Citation/A:identifier/A:RS_Identifier/' +
                          'A:code/B:CharacterString', 
                          identifier)
-    
+
+    def set_title(self, title):
+      
+        self.update_text('//A:MD_Metadata/A:identificationInfo/' +
+                         'A:MD_DataIdentification/A:citation/' +
+                         'A:CI_Citation/A:title/B:CharacterString', 
+                         title)      
+        
+    def set_abstract(self, abstract):
+      
+        self.update_text('//A:MD_Metadata/A:identificationInfo/' +
+                         'A:MD_DataIdentification/A:abstract/' +
+                         'B:CharacterString', 
+                         title)        
+                
+        
     def set_organisation(self, organisation):
         
         self.update_text('//A:MD_Metadata/A:contact/A:CI_ResponsibleParty/A:organisationName/B:CharacterString',
