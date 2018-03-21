@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gmd:MD_Metadata xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink">
   <gmd:fileIdentifier>
-    <gco:CharacterString>S2A_USER_PRD_MSIL2A_20161202T082312_b03</gco:CharacterString>
+    <gco:CharacterString></gco:CharacterString>
   </gmd:fileIdentifier>
   <gmd:language>
     <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng">eng</gmd:LanguageCode>
@@ -15,14 +15,14 @@
   <gmd:contact>
     <gmd:CI_ResponsibleParty>
       <gmd:organisationName>
-        <gco:CharacterString>CREAF</gco:CharacterString>
+        <gco:CharacterString></gco:CharacterString>
       </gmd:organisationName>
       <gmd:contactInfo>
         <gmd:CI_Contact>
           <gmd:address>
             <gmd:CI_Address>
               <gmd:electronicMailAddress>
-                <gco:CharacterString>contacte@creaf.uab.es</gco:CharacterString>
+                <gco:CharacterString></gco:CharacterString>
               </gmd:electronicMailAddress>
             </gmd:CI_Address>
           </gmd:address>
@@ -34,7 +34,7 @@
     </gmd:CI_ResponsibleParty>
   </gmd:contact>
   <gmd:dateStamp>
-    <gco:Date>2017-03-01</gco:Date>
+    <gco:Date></gco:Date>
   </gmd:dateStamp>
   <gmd:metadataStandardName>
     <gco:CharacterString>ISO19115</gco:CharacterString>
@@ -118,7 +118,7 @@
           <gmd:date>
             <gmd:CI_Date>
               <gmd:date>
-                <gco:Date>2017-03-01</gco:Date>
+                <gco:Date></gco:Date>
               </gmd:date>
               <gmd:dateType>
                 <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
@@ -128,7 +128,7 @@
           <gmd:identifier>
             <gmd:RS_Identifier>
               <gmd:code>
-                <gco:CharacterString>S2A_USER_PRD_MSIL2A_20161202T082312_b03</gco:CharacterString>
+                <gco:CharacterString></gco:CharacterString>
               </gmd:code>
               <gmd:codeSpace>
                 <gco:CharacterString>https://psd-13.sentinel2.eo.esa.int</gco:CharacterString>
@@ -138,19 +138,19 @@
         </gmd:CI_Citation>
       </gmd:citation>
       <gmd:abstract>
-        <gco:CharacterString>Sentinel-2 Surface Reflectance Product Data</gco:CharacterString>
+        <gco:CharacterString></gco:CharacterString>
       </gmd:abstract>
       <gmd:pointOfContact>
         <gmd:CI_ResponsibleParty>
           <gmd:organisationName>
-            <gco:CharacterString>CREAF</gco:CharacterString>
+            <gco:CharacterString></gco:CharacterString>
           </gmd:organisationName>
           <gmd:contactInfo>
             <gmd:CI_Contact>
               <gmd:address>
                 <gmd:CI_Address>
                   <gmd:electronicMailAddress>
-                    <gco:CharacterString>contacte@creaf.uab.cat</gco:CharacterString>
+                    <gco:CharacterString></gco:CharacterString>
                   </gmd:electronicMailAddress>
                 </gmd:CI_Address>
               </gmd:address>
@@ -212,7 +212,7 @@
       <gmd:descriptiveKeywords>
         <gmd:MD_Keywords>
           <gmd:keyword>
-            <gco:CharacterString>LAND SURFACE</gco:CharacterString>
+            <gco:CharacterString></gco:CharacterString>
           </gmd:keyword>
           <gmd:thesaurusName>
             <gmd:CI_Citation>
@@ -276,7 +276,7 @@
               <gmd:geographicIdentifier>
                 <gmd:MD_Identifier>
                   <gmd:code>
-                    <gco:CharacterString>Northern Limestone National Park</gco:CharacterString>
+                    <gco:CharacterString></gco:CharacterString>
                   </gmd:code>
                 </gmd:MD_Identifier>
               </gmd:geographicIdentifier>
@@ -285,16 +285,16 @@
           <gmd:geographicElement>
             <gmd:EX_GeographicBoundingBox>
               <gmd:westBoundLongitude>
-                <gco:Decimal>12.52</gco:Decimal>
+                <gco:Decimal></gco:Decimal>
               </gmd:westBoundLongitude>
               <gmd:eastBoundLongitude>
-                <gco:Decimal>15.68</gco:Decimal>
+                <gco:Decimal></gco:Decimal>
               </gmd:eastBoundLongitude>
               <gmd:southBoundLatitude>
-                <gco:Decimal>46.39</gco:Decimal>
+                <gco:Decimal></gco:Decimal>
               </gmd:southBoundLatitude>
               <gmd:northBoundLatitude>
-                <gco:Decimal>48.47</gco:Decimal>
+                <gco:Decimal></gco:Decimal>
               </gmd:northBoundLatitude>
             </gmd:EX_GeographicBoundingBox>
           </gmd:geographicElement>
@@ -304,12 +304,12 @@
                 <gml:TimePeriod gml:id="IDcd3b1c4f-b5f7-439a-afc4-3317a4cd89be" xsi:type="gml:TimePeriodType">
                   <gml:begin>
                     <gml:TimeInstant gml:id="IDcd3b1c4f-b5f7-439a-afc4-3317a4cd89be_begin">
-                      <gml:timePosition>2016-12-02T10:25:00</gml:timePosition>
+                      <gml:timePosition></gml:timePosition>
                     </gml:TimeInstant>
                   </gml:begin>
                   <gml:end>
                     <gml:TimeInstant gml:id="IDcd3b1c4f-b5f7-439a-afc4-3317a4cd89be_end">
-                      <gml:timePosition>2016-12-02T12:00:00</gml:timePosition>
+                      <gml:timePosition></gml:timePosition>
                     </gml:TimeInstant>
                   </gml:end>
                 </gml:TimePeriod>
@@ -323,7 +323,7 @@
   <gmd:contentInfo>
     <gmd:MD_CoverageDescription>
       <gmd:attributeDescription>
-        <gco:RecordType>Surface reflectance</gco:RecordType>
+        <gco:RecordType></gco:RecordType>
       </gmd:attributeDescription>
       <gmd:contentType>
         <gmd:MD_CoverageContentTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="physicalMeasurement">value in physical units of the quantity being measured</gmd:MD_CoverageContentTypeCode>
@@ -333,12 +333,12 @@
           <gmd:sequenceIdentifier>
             <gco:MemberName>
               <gco:aName>
-                <gco:CharacterString>Surface reflectance</gco:CharacterString>
+                <gco:CharacterString></gco:CharacterString>
               </gco:aName>
               <gco:attributeType>
                 <gco:TypeName>
                   <gco:aName>
-                    <gco:CharacterString>unsigned integer</gco:CharacterString>
+                    <gco:CharacterString></gco:CharacterString>
                   </gco:aName>
                 </gco:TypeName>
               </gco:attributeType>
@@ -365,7 +365,7 @@
           <gmd:distributorContact>
             <gmd:CI_ResponsibleParty>
               <gmd:organisationName>
-                <gco:CharacterString>CNR</gco:CharacterString>
+                <gco:CharacterString></gco:CharacterString>
               </gmd:organisationName>
               <gmd:role>
                 <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">Distributor</gmd:CI_RoleCode>
@@ -379,7 +379,7 @@
           <gmd:onLine>
             <gmd:CI_OnlineResource>
               <gmd:linkage>
-                <gmd:URL>ftp://frontend.recas.ba.infn.it//lustre/ecopotential/incoming/PAs/NorthernLimestone/EO_Raw_Data/Sentinel_2/S2A_USER_PRD_MSIL2A_20161202T082312_b03.jp2</gmd:URL>
+                <gmd:URL></gmd:URL>
               </gmd:linkage>
             </gmd:CI_OnlineResource>
           </gmd:onLine>
@@ -430,23 +430,7 @@
       <gmd:lineage>
         <gmd:LI_Lineage>
           <gmd:statement>
-            <gco:CharacterString>Sen2Cor parameters used in the atmospheric correction:
-Filters \ Median_Filter: 0
-Atmospheric_Correction \ Look_Up_Tables \ Aerosol_Type: RURAL
-Atmospheric_Correction \ Look_Up_Tables \ Mid_Latitude: AUTO
-Atmospheric_Correction \ Look_Up_Tables \ Ozone_Content: 0
-Atmospheric_Correction \ Flags \ WV_Correction: 1
-Atmospheric_Correction \ Flags \ VIS_Update_Mode: 1
-Atmospheric_Correction \ Flags \ WV_Watermask: 1
-Atmospheric_Correction \ Flags \ Cirrus_Correction: 1
-Atmospheric_Correction \ Flags \ BRDF_Correction: 0
-Atmospheric_Correction \ Flags \ BRDF_Lower_Bound: 0.22
-Atmospheric_Correction \ Calibration \ DEM_Unit: 0
-Atmospheric_Correction \ Calibration \ Adj_Km: 1.000
-Atmospheric_Correction \ Calibration \ Visibility: 40.0
-Atmospheric_Correction \ Calibration \ Altitude: 0.100
-Atmospheric_Correction \ Calibration \ Smooth_WV_Map: 100.0
-Atmospheric_Correction \ Calibration \ WV_Threshold_Cirrus: 0.25</gco:CharacterString>
+            <gco:CharacterString></gco:CharacterString>
           </gmd:statement>
         </gmd:LI_Lineage>
       </gmd:lineage>

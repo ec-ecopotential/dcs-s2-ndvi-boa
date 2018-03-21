@@ -46,31 +46,49 @@ class ISOMetadata:
                          'A:MD_DataIdentification/A:citation/' +
                          'A:CI_Citation/A:title/B:CharacterString', 
                          title)      
-        
+    
     def set_abstract(self, abstract):
       
         self.update_text('//A:MD_Metadata/A:identificationInfo/' +
                          'A:MD_DataIdentification/A:abstract/' +
                          'B:CharacterString', 
-                         title)        
-                
+                         title)  
         
-    def set_organisation(self, organisation):
+    def set_lineage(self, lineage):
+
+        self.update_text('//A:dataQualityInfo/A:DQ_DataQuality/' +
+                         'A:lineage/A:LI_Lineage/' +
+                         'A:statement/B:CharacterString', 
+                         lineage)  
         
+    #def set_organisation(self, organisation):
+        
+    #    self.update_text('//A:MD_Metadata/A:contact/A:CI_ResponsibleParty/A:organisationName/B:CharacterString',
+    #                     organisation)
+        
+    #    self.update_text('//A:MD_Metadata/A:identificationInfo/' +
+    #                     'A:MD_DataIdentification/A:pointOfContact/' +
+    #                     'A:CI_ResponsibleParty/A:organisationName/B:CharacterString',
+    #                     organisation)
+    
+    def set_contact_party(self, party, contact):
+    
         self.update_text('//A:MD_Metadata/A:contact/A:CI_ResponsibleParty/A:organisationName/B:CharacterString',
-                         organisation)
+                         party)
         
-        self.update_text('//A:MD_Metadata/A:identificationInfo/' +
-                         'A:MD_DataIdentification/A:pointOfContact/' +
-                         'A:CI_ResponsibleParty/A:organisationName/B:CharacterString',
-                         organisation)
-    
-    def set_contact(self, contact):
-    
+        
         self.update_text('//A:MD_Metadata/A:contact/A:CI_ResponsibleParty/' + 
                          'A:contactInfo/A:CI_Contact/A:address/' + 
                          'A:CI_Address/A:electronicMailAddress/B:CharacterString',
                          contact)
+        
+    def set_poc(self, party, contact):    
+        
+        self.update_text('//A:MD_Metadata/A:identificationInfo/' +
+                         'A:MD_DataIdentification/A:pointOfContact/' +
+                         'A:CI_ResponsibleParty/A:organisationName/' +
+                         'B:CharacterString',
+                         party)
         
         self.update_text('//A:MD_Metadata/A:identificationInfo/' +
                          'A:MD_DataIdentification/A:pointOfContact/' +
@@ -223,7 +241,7 @@ class ISOMetadata:
                          'A:distributionFormat/A:MD_Format/A:name/B:CharacterString',
                         data_format)        
     
-    def set_responsible_party(self, party):
+    def set_distributor_party(self, party):
         
         self.update_text('//A:MD_Metadata/A:distributionInfo/' +
                          'A:MD_Distribution/A:distributor/A:MD_Distributor/' +
@@ -246,6 +264,8 @@ class ISOMetadata:
                          'A:geographicElement/A:EX_GeographicDescription/' + 
                          'A:geographicIdentifier/A:MD_Identifier/A:code/B:CharacterString',
                         pa)
+    
+   
     
     def metadata(self):
                          
