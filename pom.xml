@@ -11,7 +11,7 @@
     <version>3.0.0-docker</version>
   </parent>
   <description>Bottom of Atmosphere NDVI derived from Sentinel-2</description>
-  <version>1.4</version>
+  <version>1.5</version>
   <properties>
     <summary>Bottom of Atmosphere NDVI derived from Sentinel-2</summary>
     <description>Bottom of Atmosphere NDVI derived from Sentinel-2</description>
