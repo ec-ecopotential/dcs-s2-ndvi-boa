@@ -2,14 +2,7 @@
   <jobTemplates>
     <jobTemplate id="notebook">
       <streamingExecutable>/application/notebook/run</streamingExecutable>
-      <defaultParameters><parameter id="pa_code" title="Protected Area code" abstract="Protected Area code (one of DO,...)" maxOccurs="1" scope="runtime" type="LiteralData">DO</parameter><parameter id="pa_name" title="Protected Area name" abstract="Protected Area name (one of Donana,...)" maxOccurs="1" scope="runtime" type="LiteralData">Donana</parameter><parameter id="resolution" title="Spatial resolution" abstract="Spatial resolution in meters (10 or 20 or 60)" maxOccurs="1" scope="runtime" type="LiteralData">60</parameter><parameter id="plot" title="Boolean to add quicklooks to notebook" abstract="Boolean to add quicklooks to notebook" maxOccurs="1" scope="runtime" type="LiteralData">False</parameter><parameter id="flag_expr" title="Flag expression for pixel exclusion" abstract="Flag expression for pixel exclusion (e.g. saturated_l1a_B4 will exclude pixels having the flag saturated_l1a_B4 set)" maxOccurs="1" scope="runtime" type="LiteralData">( saturated_l1a_B4 or scl_water )</parameter>
-        <parameter id="selectedPolarisations" title="Sentinel-1 polarisation" abstract="Sentinel-1 polarisation" maxOccurs="1" scope="runtime" type="LiteralData">
-          <options>
-            <option>VV</option>
-            <option>VH</option>
-            <default>VV</default>
-          </options>
-        </parameter></defaultParameters>
+      <defaultParameters><parameter id="pa_code" title="Protected Area code" abstract="Protected Area code (one of DO,...)" maxOccurs="1" scope="runtime" type="LiteralData">DO</parameter><parameter id="pa_name" title="Protected Area name" abstract="Protected Area name (one of Donana,...)" maxOccurs="1" scope="runtime" type="LiteralData">Donana</parameter><parameter id="resolution" title="Spatial resolution" abstract="Spatial resolution in meters (10 or 20 or 60)" maxOccurs="1" scope="runtime" type="LiteralData">60</parameter><parameter id="plot" title="Boolean to add quicklooks to notebook" abstract="Boolean to add quicklooks to notebook" maxOccurs="1" scope="runtime" type="LiteralData">False</parameter><parameter id="flag_expr" title="Flag expression for pixel exclusion" abstract="Flag expression for pixel exclusion (e.g. saturated_l1a_B4 will exclude pixels having the flag saturated_l1a_B4 set)" maxOccurs="1" scope="runtime" type="LiteralData">( saturated_l1a_B4 or scl_water )</parameter></defaultParameters>
      <defaultJobconf>
         <property id="mapred.task.timeout">9900000000000</property>
       </defaultJobconf>
