@@ -96,7 +96,7 @@ class ISOMetadata:
                          'A:address/A:CI_Address/A:electronicMailAddress/B:CharacterString',
                          contact)        
         
-    def set_date(self, date):
+    def set_production_date(self, date):
         
         self.update_text('//A:MD_Metadata/A:dateStamp/B:Date',
                         date)
@@ -265,7 +265,13 @@ class ISOMetadata:
                          'A:geographicIdentifier/A:MD_Identifier/A:code/B:CharacterString',
                         pa)
     
-   
+    def set_source(self, source):
+        
+        self.update_text('//A:dataQualityInfo/A:DQ_DataQuality/' +
+                         'A:lineage/A:LI_Lineage/' +
+                         'A:source/A:LI_Source/' +
+						 'A:description/B:CharacterString', 
+                         source)  
     
     def metadata(self):
                          
