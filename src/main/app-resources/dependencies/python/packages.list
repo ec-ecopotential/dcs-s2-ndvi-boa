@@ -22,7 +22,7 @@ cairo=1.14.8=0
 certifi=2017.7.27.1=py27_0
 cffi=1.9.1=py27_0
 chardet=3.0.4=py27hfa10054_1
-cioppy=0.2.5=py27hee3aa44_0
+cioppy=0.2.9=py27h6a2dc41_0
 click=6.7=py27h4225b90_0
 click-plugins=1.0.3=py27_0
 cligj=0.4.0=py27_0
@@ -37,9 +37,9 @@ curl=7.49.0=1
 cycler=0.10.0=py27_0
 dbus=1.10.10=0
 decorator=4.0.11=py27_0
-descartes=1.1.0=py27_0
+descartes=1.1.0=py27h5233db4_0
 docutils=0.14=py27hae222c1_0
-ellip_triggers=0.0.4=py27h63df5b3_0
+ellip_triggers=0.0.8=py27h63df5b3_0
 entrypoints=0.2.2=py27_0
 enum34=1.1.6=py27_0
 expat=2.1.0=0
@@ -97,7 +97,7 @@ libgcc-ng=7.2.0=h7cc24e2_2
 libgfortran-ng=7.2.0=h9f7466a_2
 libiconv=1.14=0
 libnetcdf=4.4.1=0
-libpng=1.6.32=hbd3595f_4
+libpng=1.6.32=hda9c8bc_2
 libpq=9.5.4=0
 libsodium=1.0.10=0
 libspatialindex=1.8.5=1
@@ -306,7 +306,7 @@ singledispatch=3.4.0.3=py27_0
 sip=4.18=py27_0
 six=1.10.0=py27_0
 smmap2=2.0.1=py27_0
-snappy=5.0=py27h4e28427_0
+snappy=5.0=py27_0
 snowballstemmer=1.2.1=py27h44e2768_0
 sphinx=1.6.3=py27hf9b1778_0
 sphinx_bootstrap_theme=0.5.3=py27_0
