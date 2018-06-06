@@ -11,7 +11,7 @@
     <version>2.0.0</version>
   </parent>
   <description>Bottom of Atmosphere NDVI derived from Sentinel-2</description>
-  <version>1.7</version>
+  <version>1.8</version>
   <properties>
     <summary>Bottom of Atmosphere NDVI derived from Sentinel-2</summary>
     <description>Bottom of Atmosphere NDVI derived from Sentinel-2</description>
@@ -49,7 +49,7 @@
                 <configuration>
                   <executable>python</executable>
                   <arguments>
-                    <argument>${basedir}/src/main/scripts/generate_descriptor.py</argument>
+                    <argument>/opt/anaconda/bin/app_descriptor_generator</argument>
                     <argument>${basedir}/src/main/app-resources/application_template.xml</argument>
                     <argument>${basedir}/src/main/app-resources/application.xml</argument>
                     <argument>${basedir}/src/main/app-resources/notebook/libexec/input.ipynb</argument>
