@@ -11,7 +11,7 @@
     <version>2.0.0</version>
   </parent>
   <description>Bottom of Atmosphere NDVI derived from Sentinel-2</description>
-  <version>1.8</version>
+  <version>1.9</version>
   <properties>
     <summary>Bottom of Atmosphere NDVI derived from Sentinel-2</summary>
     <description>Bottom of Atmosphere NDVI derived from Sentinel-2</description>
@@ -89,7 +89,7 @@
                     <require>snap</require>
                   </requires>
                   <postinstallScriptlet combine.self="override">
-                    <script>conda update conda -y &amp;&amp; conda install -y --file /application/dependencies/python/packages.list</script>
+                    <script>conda update conda -y &amp;&amp; conda install -y --file /application/dependencies/python/packages.list; cp /application/notebook/etc/snappy.ini /opt/anaconda/lib/python2.7/site-packages/snappy/snappy.ini</script>
                   </postinstallScriptlet>
                 </configuration>
               </execution>
