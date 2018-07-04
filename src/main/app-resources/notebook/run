@@ -36,11 +36,11 @@ def clean_exit(exit_code):
     }
  
     ciop.log(log_level, msg[exit_code])  
-    
-def parametrize(identifier, reference):
 
+def parametrize(identifier,reference):
+    
     global nb
-        
+    
     for index, cell in enumerate(nb['cells']):
        
         if str(cell['cell_type']) == 'code': 
@@ -97,8 +97,9 @@ def parametrize(identifier, reference):
                 
                 continue
 
-   
 
+    
+ 
 def reproducibility(path, reference):
     
     ciop.log('INFO', 'Create stage-in notebook for reproducibility')
@@ -116,9 +117,7 @@ import cioppy
 ciop = cioppy.Cioppy()"""))
     
     code.append(nbf.v4.new_code_cell('tmp_dir = "' + tmp_dir + '"'))
-    code.append(nbf.v4.new_code_cell("""\
-if not os.path.isdir(tmp_dir):
-    os.makedirs(tmp_dir)"""))
+    code.append(nbf.v4.new_code_cell('os.makedirs(tmp_dir)'))
     
     #for reference in references:
     code.append(nbf.v4.new_code_cell('reference = "' + reference + '"'))
@@ -160,7 +159,7 @@ def execute(identifier, reference, nb_source, nb_target, kernel = 'python2'):
     parametrize(identifier, reference)
     
     # execute the notebook
-    ep = ExecutePreprocessor(timeout=None, kernel_name=kernel)
+    ep = ExecutePreprocessor(timeout=50000, kernel_name=kernel)
 
     try:
       out = ep.preprocess(nb, {'metadata': {'path': './'}})
@@ -200,6 +199,8 @@ def main():
     tmp_dir = os.path.join('/tmp', 'workspace-' + str(uuid.uuid4()), 'data') 
     os.makedirs(tmp_dir)
 
+    os.environ['IPYTHONDIR'] = tmp_dir
+
     # Loops over all the inputs
     for reference in sys.stdin:
       references.append(reference.rstrip())
@@ -237,5 +238,4 @@ except SystemExit as e:
   raise
 else:
   atexit.register(clean_exit, 0)
-
 
